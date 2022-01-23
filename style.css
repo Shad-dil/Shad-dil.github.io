@@ -1,0 +1,103 @@
+:root {
+    --bg: rgb(69, 75, 112);
+    --contrast-bright: rgb(255, 131, 131);
+  }
+body {
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Rubik";
+    font-weight: 300;
+    color: #fff;
+  }
+  input.passageInput {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-weight: 700;
+    font-family: "Courier New";
+    font-size: 42px;
+    color: rgba(255,255,255,0.2);
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 4px;
+  }
+  div.mainContent_Container > div.passageInput_hint {
+    display: block;
+    font-family: "Rubik";
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+    animation: blink 1s ease-in infinite;
+  }
+  div.stats_Container > div.stats {
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 8px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+  }
+  div.stats_Container > div.stats > div.header {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(255,255,255,1);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  div.stats_Container > div.stats > div.baseContent {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  div.stats_Container > div.stats > div.baseContent > h1 {
+    margin: 0;
+    padding: 0;
+      padding-right: 0px;
+      padding-left: 0px;
+    padding-left: 20px;
+    display: inline;
+    padding-right: 20px;
+    height: 100px;
+    width: 150px;
+    border-right: 2px solid #fff;
+  }
+  div.stats_Container > div.stats > div.baseContent > div.baseContent_allStats {
+    flex-grow: 100;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  div.stats_Container > div.stats > div.baseContent > div.baseContent_allStats > table {
+    width: 100%;
+  }
+  div.stats_Container > div.stats > div.baseContent > div.baseContent_allStats td.right {
+    text-align: right;
+  }
+  div.endgame_Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+  }
+  div.endgame_Container > div.button {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 800px;
+    text-align: center;
+    padding: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+  }
