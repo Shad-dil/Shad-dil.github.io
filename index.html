@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="./Js/style.css">
+</head>
+<body>
+    <div class="mainContent_Container">
+        <div class="passage_Container" >
+          <p id="timer"></p>
+          <h1 style="text-align: center;">Typing Speed Tester</h1>
+      <p id="passages" style="font-size: 17px;"></p>
+        </div>
+        <div class="passageInput_Container">
+         <textarea name="word" id="writebox" cols="125" rows="10" disabled></textarea>
+        </div>
+        <div class="endgame_Container">
+          <div class="button" id="text_btn" style="    margin: 17px;
+          width: 85px;
+          font-size: 18px;">Start</div>
+        </div>
+        <div class="stats_Container" id="statatics" style="display: none;">
+          <div class="stats" style="    width: 837px;
+          padding: 50px;">
+            <div class="header">Statistics</div>
+            <div class="baseContent">
+              <h1><span id="wpm">0</span> wpm</h1>
+              <div class="baseContent_allStats">
+                <table>
+                  <tr>
+                    <td>Total Characters</td>
+                    <td class='right'><span id="total_word">0</span></td>
+                  </tr>
+                  <tr>
+                    <td>Correct Words</td>
+                    <td class='right'><span id="crt_word">0</span></td>
+                  </tr><tr>
+                    <td>Error Words</td>
+                    <td class='right'><span id="err_word">0</span></td>
+                  </tr>
+                  
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+</body>
+<script src="./Js/index.js"></script>
+</html>
